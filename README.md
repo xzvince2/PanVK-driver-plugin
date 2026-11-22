@@ -7,7 +7,7 @@ A PanVK vulkan driver app plugin for supported android minecraft java launchers.
 - [FoldCrafLauncher](https://github.com/FCL-Team/FoldCraftLauncher)
 - Or any other launchers that allows driver app plugins.
 
-# Compatible GPUs
+## Compatible GPUs
 Not all GPU are supported, it would most likely crash on some specific devices. Tested only on Mali G615 MC6 since it's the only device I have yet. Check [panvk-faux123](https://github.com/faux123/panvk-faux123-driver-ace) for further information about supported GPUs.
 
 ## Warning
