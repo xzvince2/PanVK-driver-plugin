@@ -6,6 +6,7 @@ plugins {
 android {
     namespace = "com.mio.plugin.renderer"
     compileSdk = 34
+    ndkVersion = "30.0.15729638"
 
     defaultConfig {
         applicationId = "com.mio.plugin.renderer"
@@ -13,6 +14,17 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
+
+        ndk {
+            abiFilters += "arm64-v8a"
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path = file("src/main/cpp/CMakeLists.txt")
+            version = "4.1.2"
+        }
     }
 
     buildTypes {
@@ -22,14 +34,14 @@ android {
         configureEach {
             //应用名
             //app name
-            resValue("string","app_name","PanVK 1.1.9-rc7")
+            resValue("string","app_name","PanVK 1.1.9-rc10")
             //包名后缀
             //package name Suffix
             applicationIdSuffix = ".panvk"
 
             //驱动在启动器内显示的名称
             //The name displayed by the driver in the launcher
-            manifestPlaceholders["driver"] = "PanVK 1.1.9-rc7"
+            manifestPlaceholders["driver"] = "PanVK 1.1.9-rc10"
             //驱动库文件名（须存在于 src/main/jniLibs/<abi>/ 下）
             //Driver library file name (must exist under src/main/jniLibs/<abi>/)
             manifestPlaceholders["driverLib"] = "libvulkan_panfrost.so"

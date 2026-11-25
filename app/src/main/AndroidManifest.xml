@@ -29,6 +29,9 @@
         <meta-data
             android:name="driver_gpu"
             android:value="${driverGpu}" />
+        <meta-data
+            android:name="panvkDriver"
+            android:value="true" />
 
     </application>
 
