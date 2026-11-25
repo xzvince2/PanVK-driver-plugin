@@ -12,3 +12,7 @@ This driver doesn't mean it will boost fps at all the time. In fact, it might ev
 
 ## Credits
 All credits goes to Faux and his awesome project [panvk-faux123](https://github.com/faux123/panvk-faux123-driver-ace)
+
+## Evidence
+![Screenshot](docs/1.jpg)
+![Screenshot](docs/2.jpg)
