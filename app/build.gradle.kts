@@ -13,7 +13,7 @@ android {
         minSdk = 26
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.1.9"
 
         ndk {
             abiFilters += "arm64-v8a"
@@ -34,14 +34,14 @@ android {
         configureEach {
             //应用名
             //app name
-            resValue("string","app_name","PanVK 1.1.9-rc10")
+            resValue("string","app_name","PanVK 1.1.9")
             //包名后缀
             //package name Suffix
             applicationIdSuffix = ".panvk"
 
             //驱动在启动器内显示的名称
             //The name displayed by the driver in the launcher
-            manifestPlaceholders["driver"] = "PanVK 1.1.9-rc10"
+            manifestPlaceholders["driver"] = "PanVK 1.1.9"
             //驱动库文件名（须存在于 src/main/jniLibs/<abi>/ 下）
             //Driver library file name (must exist under src/main/jniLibs/<abi>/)
             manifestPlaceholders["driverLib"] = "libvulkan_panfrost.so"

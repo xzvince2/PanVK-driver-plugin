@@ -8,7 +8,7 @@ class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(TextView(this).apply {
-            text = "Version: 1.1.9-rc10"
+            text = "Version: 1.1.9 stable"
         })
     }
 }
